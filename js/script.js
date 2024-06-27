@@ -44,7 +44,7 @@ window.addEventListener("DOMContentLoaded", () => {
             }
         }); 
 
-        this.remove();
+        this.remove(); // Контекст this: В контексте функции-обработчика события this ссылается на элемент, к которому прикреплен обработчик события, в данном случае — на кнопку.
     }
 
     document.querySelector("button").addEventListener("click", req, {"once": true});
